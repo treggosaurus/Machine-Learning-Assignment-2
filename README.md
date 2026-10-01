@@ -11,3 +11,15 @@ Without a reliable, well-informed plan, planning for future electricity usage co
 My goal is to implement a machine-learning model that can safely predict future energy demand in order to prevent blackouts and give governments an idea of how to plan for energy supply in the future, allowing for a better demand-supply balance, and better planning fro energy generation.
 
 This could lead to a decrease in blackouts, and better city and power future-proofing.
+
+## Running the Project
+First open the location of the directory in cmd and type in the following command:
+`python -m venv venv`
+Then install the following packages:
+`pip install jupyterlab`
+`pip install numpy`
+`pip install scikit-learn`
+`pip install kaggle`
+From here, you should be able to run
+`jupyter notebook`
+to open the notebook. You can then navigate to "main.ipynb" and run the notebook to use the model.
