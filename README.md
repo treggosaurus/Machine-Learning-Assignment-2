@@ -19,13 +19,7 @@ First open the location of the directory in cmd and type in the following comman
 
 Then install the following packages:
 
-`pip install jupyter`
-
-`pip install numpy`
-
-`pip install scikit-learn`
-
-`pip install kaggle`
+`pip install numpy pandas matplotlib scikit-learn kaggle`
 
 From here, you should be able to run
 
