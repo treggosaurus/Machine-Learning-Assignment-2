@@ -47,9 +47,9 @@ def train_primary_model(x_training_set, y_training_set):
     base_estimation = XGBRegressor(objective=asymmetric_mse)
     
     parameter_grid = {
-        'n_estimators': [100, 200],
-        'max_depth': [6, 8, 10],
-        'learning_rate': [0.05, 0.1]
+        'n_estimators': [100, 200, 300],
+        'max_depth': [6, 8, 10, 15],
+        'learning_rate': [0.05, 0.1, 0.15]
     }
     
     tscv = TimeSeriesSplit(n_splits=3)
@@ -68,7 +68,7 @@ def train_primary_model(x_training_set, y_training_set):
 
 def train_secondary_model(x_training_set, y_training_set, x_validation_set, y_validation_set, parameters):
     model = XGBRegressor(
-        objective='reg:squarederror', 
+        objective=asymmetric_mse, 
         n_estimators=parameters['n_estimators'], 
         max_depth=parameters['max_depth'],
         learning_rate=parameters['learning_rate']
