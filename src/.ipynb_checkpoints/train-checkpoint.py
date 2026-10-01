@@ -3,8 +3,8 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import GridSearchCV, TimeSeriesSplit
 from sklearn.metrics import make_scorer
 
-over_prediction_penalty = 2.5
-under_prediction_penalty = 1.0
+under_prediction_penalty = 2.0
+over_prediction_penalty = 1.0
 
 def asymmetric_mse(y_true_set, y_prediction_set):
     residual = y_true_set - y_prediction_set
