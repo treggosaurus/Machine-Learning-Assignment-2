@@ -19,7 +19,7 @@ First open the location of the directory in cmd and type in the following comman
 
 Then install the following packages:
 
-`pip install jupyterlab`
+`pip install jupyter`
 
 `pip install numpy`
 
