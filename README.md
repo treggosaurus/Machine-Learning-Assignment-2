@@ -14,12 +14,12 @@ This could lead to a decrease in blackouts, and better city and power future-pro
 
 ## Running the Project
 First open the location of the directory in cmd and type in the following command:
-`python -m venv venv`
+```python -m venv venv```
 Then install the following packages:
-`pip install jupyterlab`
-`pip install numpy`
-`pip install scikit-learn`
-`pip install kaggle`
+```pip install jupyterlab```
+```pip install numpy```
+```pip install scikit-learn```
+```pip install kaggle```
 From here, you should be able to run
-`jupyter notebook`
+```jupyter notebook```
 to open the notebook. You can then navigate to "main.ipynb" and run the notebook to use the model.
