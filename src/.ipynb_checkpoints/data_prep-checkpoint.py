@@ -6,7 +6,7 @@ def load_data(file_path):
     
     df['Datetime'] = pd.to_datetime(df['Datetime'])
     df['hour'] = df['Datetime'].dt.hour
-    df['dayofweek'] = df['Datetime'].dt.dayofweek
+    df['day_of_week'] = df['Datetime'].dt.dayofweek
     df['month'] = df['Datetime'].dt.month
     
     df['lag_24h'] = df['PJME_MW'].shift(24)
